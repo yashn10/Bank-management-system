@@ -1,0 +1,261 @@
+<div class="row">
+
+    <div class="col-2">
+        <nav class="navbar justify-content-center container-fluid" style="height: 100%;">
+            <ul class="sidenav">
+                <h1 style="color: white;">BANK</h1>
+                <h5 style="color: white; margin-bottom: 50px;">Management System</h5>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size: 18px; color: white; margin-top: 10px;"
+                        routerLink="employee">Employee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size: 18px; color: white; margin-top: 10px;"
+                        routerLink="customer">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size: 18px; color: white; margin-top: 10px;"
+                        routerLink="staff">Staff</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size: 18px; color: white; margin-top: 10px;"
+                        routerLink="statement">Statement</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <form class="form-inline" action="/action_page.php">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="col-10">
+
+        <div class="container-fluid">
+
+            <div class="row">
+                <img src="../assets/pexels-expect-best-351264 (1).jpg"
+                    style="width: 100%; height: 600px; opacity: 0.6;">
+                <div class="row left">
+                    <p>Bank Management System</p><br>
+                </div>
+                <div class="col-lg-12 login">
+                    <button class="bt" onclick="document.getElementById('id01').style.display='block'"
+                        style="width:90px;">Login</button>
+
+                    <app-login></app-login>
+
+                    <button type="button" class="bt" onclick="document.getElementById('id012').style.display='block'"
+                        style="width:140px; margin-left: 15px;">Register Here</button>
+
+                    <app-register></app-register>
+
+                </div>
+            </div>
+
+            <div class="row" style="text-align: center; margin-top: 50px; padding: 0px 150px;">
+                <div class="col-lg-3">
+                    <img src="../assets/employee.png" style="height: 70px;"><br>
+                    <button type="button" routerLink="employee" class="btn btn-success mt-3 mb-3">Add
+                        employee</button>
+                    <p>Add employee details here</p>
+                </div>
+
+                <div class="col-lg-3">
+                    <img src="../assets/steward.png" style="height: 70px;"><br>
+                    <button type="button" routerLink="customer" class="btn btn-success mt-3 mb-3">Add
+                        Customer</button>
+                    <p>Add customer details here</p>
+                </div>
+
+                <div class="col-lg-3">
+                    <img src="../assets/rating.png" style="height: 70px;"><br>
+                    <button type="button" routerLink="staff" class="btn btn-success mt-3 mb-3">Add
+                        Staff</button>
+                    <p>Add staff details here</p>
+                </div>
+
+                <div class="col-lg-3">
+                    <img src="../assets/statement.png" style="height: 70px;"><br>
+                    <button type="button" routerLink="statement" class="btn btn-success mt-3 mb-3">Add
+                        Statement</button>
+                    <p>Add statement here</p>
+                </div>
+
+                <router-outlet></router-outlet>
+
+            </div>
+
+            <div class="row" style="background-color: #efefef; margin-top: 70px;">
+                <div class="col-12" style="font-size: 35px; text-align: center; margin-top: 60px;">Any Support Needed ?
+                </div>
+                <div class="col-12" style="padding: 65px 170px;">
+                    <div class="col-12" type="button" style="font-size: 28px;">Appointment</div>
+                    <hr>
+                    <div class="col-12" type="button" style="font-size: 28px;">Already Booked</div>
+                    <hr>
+                    <div class="col-12" type="button" style="font-size: 28px;">Any Dought</div>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row" style="padding: 100px 90px; text-align: center;">
+                <div class="col-lg-4">
+                    <div style="font-size: 25px; font-weight: 600;">Latest Technology</div>
+                    <img src="../assets/banking.jpg" style="width: 300px; height: 250px; margin-top: 10px;">
+                </div>
+                <div class="col-lg-4">
+                    <div style="font-size: 25px; font-weight: 600;">High Security</div>
+                    <img src="../assets/bank security.jpg" style="width: 300px; height: 250px; margin-top: 10px;">
+                </div>
+                <div class="col-lg-4">
+                    <div style="font-size: 25px; font-weight: 600;">Online Services</div>
+                    <img src="../assets/online banking.jpg" style="width: 300px; height: 250px; margin-top: 10px;">
+                </div>
+            </div>
+
+            <div class="row" style="background-color: #efefef;">
+                <div class="col-lg-12" style="display: flex; padding: 80px 150px;">
+                    <img src="../assets/bank.jpg" style="width: 450px; height: 200px;">
+                    <div style="padding: 0px 40px;">
+                        <h1>Visit Best Bank</h1>
+                        <p style="font-size: 20px;">Get best education and quality education in different courses
+                            through
+                            our
+                            one of the best college in India</p>
+                        <button class="bt"
+                            style="background-color: #55b4d4; width: 140px; height: 55px; color: white; font-size: 17px; border: none; border-radius: 5px;">LEARN
+                            MORE</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <footer class="row page-footer font-small" style="background-color: #111; margin-top: 100px; height: 300px;">
+
+        <div class="container text-center text-md-left" style="margin-top: 20px;">
+            <div class="row">
+                <div class="col-md-3 mx-auto">
+                    <h5 class="font-weight-bold text-uppercase mt-3" style="color: white;">Order Now</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" style="color: white; text-decoration: none;">Cold Drinks</a>
+                        </li>
+                        <li>
+                            <a href="#!" style="color: white; text-decoration: none;">Pizza</a>
+                        </li>
+                        <li>
+                            <a href="#!" style="color: white; text-decoration: none;">Desserts</a>
+                        </li>
+                        <li>
+                            <a href="#!" style="color: white; text-decoration: none;">Best Deals</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- <div class="col-md-3 mx-auto">
+                    <h5 class="font-weight-bold text-uppercase mt-3" style="color: white;">Our policies</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" style="color: white; text-decoration: none;">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#!" style="color: white; text-decoration: none;">FAQ & help</a>
+                        </li>
+                    </ul>
+                </div> -->
+
+                <!-- <div class="col-md-3 mx-auto">
+                    <h5 class="font-weight-bold text-uppercase mt-3" style="color: white;">about us</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" style="color: white; text-decoration: none;">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#!" style="color: white; text-decoration: none;">Our Stores</a>
+                        </li>
+                    </ul>
+                </div> -->
+
+                <div class="col-lg-4 col-md-12 col-sm-12" style="color: white;">
+
+                    <h3 class="mbr-text mbr-bold mbr-fonts-style group-title display-7">Contacts</h3>
+
+                    <div style="display: flex; justify-content: center;">
+                        <div type="button">
+                            <img src="../assets/twitter logo.jpg" style="width: 40px; margin: 0px 15px;">
+                            <!-- <a href="https://twitter.com/mobirise" target="_blank">
+                                <div class="mbr-iconfont mbr-iconfont-social socicon-twitter socicon"
+                                    style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255);" media-simple="true">
+                                </div>
+                            </a> -->
+                        </div>
+                        <div type="button">
+                            <img src="../assets/facebook logo.jpg" style="width: 40px; margin: 0px 15px;">
+                            <!-- <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
+                                <div class="mbr-iconfont mbr-iconfont-social socicon-facebook socicon"
+                                    style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255);" media-simple="true">
+                                </div>
+                            </a> -->
+                        </div>
+                        <div type="button">
+                            <img src="../assets/gmail logo.jpg" style="width: 40px; margin: 0px 15px;">
+                            <!-- <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
+                                <div class="mbr-iconfont mbr-iconfont-social socicon-googleplus socicon"
+                                    style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255);" media-simple="true">
+                                </div>
+                            </a> -->
+                        </div>
+                        <div type="button">
+                            <img src="../assets/instagram logo.jpg" style="width: 40px; margin: 0px 15px;">
+                            <!-- <a href="https://instagram.com/mobirise" target="_blank">
+                                <div class="mbr-iconfont mbr-iconfont-social socicon-skype socicon"
+                                    style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255);" media-simple="true">
+                                </div>
+                            </a> -->
+                        </div>
+                        <!-- <div class="soc-item">
+                            <a href="https://instagram.com/mobirise" target="_blank">
+                                <div class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon"
+                                    style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255);" media-simple="true">
+                                </div>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="col-md-3 mx-auto">
+                    <div class="col-lg-12 col-md-12 col-sm-12 img-list">
+                        <h3 class="mbr-text mbr-bold mbr-fonts-style group-title display-7" style="color: white;">
+                            Recent
+                            Trips</h3>
+                        <img src="../assets/banking.jpg" style="width: 85px; margin: 4px; border-radius: 6px;">
+                        <img src="../assets/bank security.jpg"
+                            style="width: 85px; height: 57px; margin: 4px; border-radius: 6px;">
+                        <img src="../assets/online banking.jpg" style="width: 85px; margin: 4px; border-radius: 6px;">
+
+                    </div>
+                    <!-- <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" style="color: white; text-decoration: none;">Visit Nearby Store</a>
+                        </li>
+                        <li>
+                            <a href="#!" style="color: white; text-decoration: none;">Visit Office</a>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
